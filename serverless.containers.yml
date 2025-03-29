@@ -1,0 +1,16 @@
+name: fastapi-example
+
+deployment:
+  type: awsApi@1.0
+
+containers:
+  app:
+    src: ./app
+    routing:
+      pathPattern: /*
+      pathHealthCheck: /health
+    compute:
+      type: awsFargateEcs
+      awsFargateEcs:
+        cpu: 256
+        memory: 512
