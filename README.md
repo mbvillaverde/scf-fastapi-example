@@ -67,7 +67,6 @@ scf-fastapi-example/
 │   └── devcontainer.json           # Configuration file for Dev Containers
 ├── app/
 │   ├── Dockerfile                  # This is the FastAPI application image
-│   ├── __init__.py
 │   ├── main.py                     # Holds the application itself together with routes
 │   ├── requirements.txt
 │   └── static/                     # Holds the images and styling (copied from the SCF Examples)
